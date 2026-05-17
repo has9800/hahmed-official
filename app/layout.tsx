@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
+import 'katex/dist/katex.min.css'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -12,15 +13,14 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Hasan Ahmed',
+    template: '%s | Hasan Ahmed'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Hasan Ahmed - ML Research engineer, robotics engineer, and data scientist.',
 };
 
 const geist = Geist({
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-[#121212]`}
       >
         <ThemeProvider
           enableSystem={true}

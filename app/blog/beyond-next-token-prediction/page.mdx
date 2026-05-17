@@ -1,0 +1,259 @@
+export const metadata = {
+  title: "Beyond Next-Token Prediction",
+  description:
+    "Why I believe uncertainty-aware probabilistic reasoning systems may become important as AI matures beyond autoregressive next-token prediction.",
+  alternates: {
+    canonical: '/blog/beyond-next-token-prediction',
+  },
+};
+
+<Cover
+  src="https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg"
+  alt="Image from the movie Alien - from cosmos.com"
+/>
+
+
+# Beyond Next-Token Prediction
+
+A lot of my thinking around AI started with mechanistic interpretability.
+
+At the time, I was obsessed with understanding where reasoning actually “happened” inside transformer models. I went down the same rabbit holes many people in the field did, embeddings, residual streams, attention heads, activation patching, latent geometry, attention circuits, and so on.
+
+I remember experimenting initially with geometrically changing embeddings to encode causal structure, only to realize embeddings themselves don't really determine outputs the way I originally thought. Then I moved on toward residual stream analysis and started seeing the residual stream less like a place where intelligence exists, and more like a scratchpad where information gets continuously mixed and rewritten.
+
+I tried understanding whether uncertainty, honesty, and reasoning might be localized to specific components. Attention heads seemed promising at first. Masking and patching experiments felt like they should reveal something deeper. But when I looked, it was apparent everything is distributed rather than localized.
+
+Eventually I started reading papers that replaced softmax in order to avoid collapsing attention scores and force better uncertainty separation between representations. Then I read Anthropic’s work on transformer circuits and induction heads. The deeper I went into the mechanistic side of transformers, the more conflicted I became.
+
+Not because the systems were unimpressive. Modern AI is one of the greatest engineering accomplishments humanity has ever produced in my opinion.
+
+But because the deeper I looked, the more underwhelming the actual reasoning mechanisms felt.
+
+At some point I had to be honest with myself. Current large language models are still fundamentally statistical next-token predictors. Extremely advanced ones yes. But still predictors. They understand incredibly well enough that token X is likely to follow token Y more often than token Z. Some reasoning emerges from this process, especially with chain-of-thought style prompting (and newly CoT2), but it still feels shallow compared to what reasoning actually is.
+
+That realization became even stronger when I shifted some of my focus toward robotics and VLA systems.
+
+At one point I explored whether cross-attention could be forked into separate branches for authorization sensitive actions versus socially allowed public actions. The idea was that a humanoid robot could maintain a privileged action pathway while also maintaining a public interaction pathway. Initially, it actually appeared promising. The latent projections between the branches started off angularly separated by around 75 degrees. It looked like the system was beginning to disentangle the representations.
+
+But over time, training pressure collapsed the separation.
+
+The representations slowly drifted back toward one another. The angular separation kept decreasing. The branches became increasingly entangled again. The optimization process itself appeared to resist maintaining truly separate reasoning pathways.
+
+That negative result stuck with me for a long time.
+
+A lot of my ideas followed this same pattern, negative results. Yet in the end what taught me the most about VLM/LLM architectures mechanistically, what works and what doesn't, what's needed for true reasoning under uncertainty, and so on are the negative results. I learned a lot things I wouldn't have in a classroom, or in a textbook, but from breaking models apart, examining, and in the end learning to be patient and sit with those same negative results and reflect.
+
+But the failures were important because they forced me to stop thinking about transformers specifically and start thinking about intelligence more abstractly.
+
+I started thinking about how humans reason. Not superficially, like trying to bolt “human memory” or “human reasoning modules” onto transformers and calling it intelligence. That approach always felt incorrect to me.
+
+Instead, I became interested in what the human mind inspires algorithmically.
+
+We humans don't reason by generating the statistically most likely next word. Human memory itself is sparse, fragmented, associative, hierarchical, and constantly reconstructed. Our reasoning shifts between inductive reasoning, abductive reasoning, deduction, intuition, uncertainty estimation, analogies, heuristics, and probabilistic belief updating.
+
+That doesn't mean AI systems should directly imitate the architecture of the brain. I think a lot of people confuse biological inspiration with architectural copy-pasting.
+
+The more interesting question is, what computational ideas does intelligence itself suggest?
+
+Or alternatively, what is reasoning? And how do we abstract it to it's simplest idea and formulate it?
+
+After thinking about it for a long time, I kept reducing it down further and further until eventually I converged on definitions from lit. review defining it as: reasoning is the process of weighing competing hypotheses given evidence in order to update beliefs under uncertainty.
+
+That abstraction changed how I started viewing intelligence systems and simplified it. It isnt next token predition, or chatbots, or benchmark scores. It involves much more that current models lack. Belief updating under uncertainty.
+
+Once I framed it that way, a lot of things naturally followed from it.
+
+If reasoning is belief updating, then hypotheses matter. Implications matter. Evidence matters. Uncertainty matters. Confidence matters. Alternatives matter. Posterior belief distributions matter.
+
+That led me toward Bayesian statistics and probability theory first. Then eventually toward information theory as well. Concepts like entropy, mutual information, information gain, and KL divergence stopped feeling like abstract mathematical ideas and started feeling more like the actual tools required to processess information in reasoning systems.
+
+I became increasingly interested in uncertainty itself too.
+
+Not uncertainty as a side effect, but uncertainty as a core component of intelligence.
+
+Current models generate outputs, but they don't truly reason over uncertainty. They don't maintain competing hypotheses at all. They do not naturally explain why one conclusion is preferred over alternatives. They do not quantify uncertainty in a grounded way. The main idea I'm getting at is token probabilities is not the same thing as epistemic confidence.
+
+The more I thought of it, the more I felt that future reasoning systems may need to operate not over discrete token trajectories, but over continuous latent belief distributions.
+
+Not just predicting text, but maintaining evolving probabilistic states over hypotheses, evidence, implications, and posteriors.
+
+This eventually led me toward the direction I am currently exploring:
+**uncertainty aware probabilistic reasoning systems.**
+
+The rough idea is simple conceptually, even if the implementation becomes extremely difficult.
+
+A system should:
+- generate competing hypotheses,
+- derive implications from those hypotheses,
+- retrieve evidence conditioned on those implications,
+- compare evidence against predictions,
+- update posterior belief distributions,
+- and output not just conclusions, but confidence estimates, alternatives, and reasoning traces explaining why alternatives became less likely.
+
+This applies whether the intelligence exists:
+- in a chatbot,
+- a humanoid robot,
+- a drone swarm,
+- an autonomous scientific system,
+- or something entirely different.
+
+The substrate is irrelevant here because intelligence to me personally isn't an embodied vs chatbot problem. It's more than that.
+
+The underlying problem remains the same:
+how does a system reason under uncertainty about the world?
+
+One thing I realized during this process is how easy it is to get lost working bottom-up in research. There are infinite mathematical tools, architectures, papers, and possible formulations. You can spend years drowning in disconnected mechanisms without ever understanding what problem you are actually trying to solve.
+
+What gave me clarity was working top-down instead.
+
+Instead of asking:
+“What mathematics should I learn?”
+
+I started asking:
+“What behavior do I ultimately want the system to exhibit?”
+
+Once I framed the end goal clearly, I could decompose the problem into smaller sub-problems:
+hypothesis generation,
+implication prediction,
+evidence retrieval,
+uncertainty estimation,
+posterior updates,
+probability distributions,
+latent-space representations,
+and probabilistic output conditioning.
+
+Ironically, the deeper the mathematics became, the more clarity I gained.
+
+The integrals over probability densities, likelihood-free methods, neural ratio estimation, latent distributions, posterior shifts, information gain, all of it stopped feeling disconnected once it became attached to a clear reasoning objective.
+
+## From Philosophy to Research Direction
+
+At some point, these ideas stopped being purely philosophical and started becoming a decomposable research problem.
+
+The biggest realization for me was that reasoning under uncertainty can be broken into smaller, testable components rather than treated as one impossible monolithic problem.
+
+Right now, my current roadmap roughly looks like this:
+
+### Phase 1 — Hypothesis & Implication Generation
+
+This is currently the part I am most focused on.
+
+The goal is not simply to generate responses, but to generate:
+- competing hypotheses,
+- implications and predictions from those hypotheses,
+- and mechanistically distinct alternatives.
+
+One direction I currently believe in is retrieval-augmented hypothesis generation.
+
+Rather than allowing a model to hallucinate explanations entirely from internal priors, the system retrieves grounded information first, then generates competing hypotheses conditioned on retrieved context.
+
+From there, the model derives implications and predictions:
+- if hypothesis H is true,
+- what observations should exist?
+- what evidence patterns should emerge?
+- what evidence should contradict it?
+
+The implications themselves then become targeted search queries for additional evidence retrieval.
+
+One difficult problem here is ensuring hypotheses are genuinely different from one another rather than semantic paraphrases. My current thinking is that latent clustering and representation separation may help enforce mechanistic diversity between hypotheses.
+
+The goal is not merely diversity in wording, but diversity in explanation and prediction.
+
+---
+
+### Phase 2 — Evidence Comparison & Information Gain
+
+Once evidence is retrieved, the system compares evidence against predicted implications.
+
+This is where information theory becomes important.
+
+Right now I am particularly interested in:
+- entropy,
+- mutual information,
+- information gain,
+- and KL divergence between prior and posterior belief distributions.
+
+The system should not merely retrieve information, but measure:
+- how much beliefs changed,
+- how uncertainty evolved,
+- and which evidence meaningfully separated competing hypotheses.
+
+---
+
+### Phase 3 — Probabilistic Belief Updates
+
+Another realization I arrived at is that reasoning may operate more naturally in continuous latent spaces rather than discrete token space.
+
+This naturally leads toward continuous probability distributions and probability density functions rather than purely discrete token probabilities.
+
+For continuous distributions:
+
+$$
+P(a \leq X \leq b) = \int_a^b f(x)\,dx
+$$
+
+The area under the distribution represents probability mass over a region rather than probability concentrated at a single point.
+
+This became increasingly important as I thought about:
+- uncertainty magnitude,
+- posterior distribution volume,
+- latent belief geometry,
+- and evolving probabilistic belief states.
+
+---
+
+### Phase 4 — Likelihood-Free Inference
+
+One major challenge is that explicit likelihood functions may become intractable in open-ended reasoning systems.
+
+Rather than computing exact likelihoods directly, I am currently interested in likelihood-free methods:
+- neural ratio estimation,
+- simulation-based inference,
+- contrastive inference,
+- and learned posterior approximations.
+
+Conceptually, the system does not necessarily need to know the exact likelihood function itself. It only needs to approximate:
+- how compatible evidence is with a hypothesis,
+- and how beliefs should shift as a result.
+
+Very loosely, the core Bayesian intuition still remains:
+
+$$
+P(H \mid E) = \frac{P(E \mid H)P(H)}{P(E)}
+$$
+
+But the implementation may rely on learned approximations rather than analytically tractable probability models.
+
+---
+
+### Phase 5 — Posterior-Conditioned Outputs
+
+The final stage is where reasoning becomes externally visible.
+
+Instead of generating a single unconstrained response, the system outputs:
+- posterior-weighted conclusions,
+- confidence estimates,
+- reasoning traces,
+- alternative hypotheses,
+- and explanations for why alternatives became less likely.
+
+In other words, the output becomes conditioned on evolving posterior belief distributions rather than purely next-token likelihoods.
+
+---
+
+I plan to openly research and document this process publicly, including:
+- failed experiments,
+- architectural revisions,
+- implementation attempts,
+- mathematical dead ends,
+- and negative results.
+
+I do not view this as a solved architecture.
+
+I view it as an attempt to decompose reasoning under uncertainty into progressively testable systems.
+
+I am still a student, and I fully expect many of these ideas to evolve, fail, or require correction over time. But I think research maturity is less about pretending to have solved intelligence and more about carving out narrow, testable problems and pursuing them honestly.
+
+Right now, this is the direction I believe in most:
+
+that uncertainty-aware probabilistic reasoning systems may become important as AI matures beyond purely autoregressive next-token prediction.

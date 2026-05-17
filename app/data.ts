@@ -57,7 +57,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     id: 'work1',
   },
   {
-    company: 'Freelance',
+    company: 'Law Depot',
     title: 'Design Engineer',
     start: '2022',
     end: '2024',
@@ -65,10 +65,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     id: 'work2',
   },
   {
-    company: 'Freelance',
+    company: 'DotHealth Inc',
     title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
+    start: '2019',
+    end: '2022',
     link: 'https://ibelick.com',
     id: 'work3',
   },
@@ -76,50 +76,22 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: "Beyond Next-Token Prediction",
+    description: "Why I believe uncertainty-aware probabilistic reasoning systems may become important as AI matures beyond autoregressive next-token prediction.",
+    link: '/blog/beyond-next-token-prediction',
     uid: 'blog-1',
-  },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/has9800',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.linkedin.com/',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'hasan.abdul.ahmed@gmail.com'

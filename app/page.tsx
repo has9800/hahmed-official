@@ -19,6 +19,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import { div } from 'motion/react-m'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -126,7 +127,7 @@ function MagneticSocialLink({
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-24"
+      className="space-y-16"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -136,18 +137,17 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+          <p className="text-zinc-600 dark:text-zinc-400 font-light">
+            Focused on artifical intelligence in all its forms, I'm passionate about exploring the intersection of the human and artificial cognition. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
           </p>
         </div>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">Selected Work</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -170,9 +170,48 @@ export default function Personal() {
             </div>
           ))}
         </div>
+      </motion.section> */}
+
+            <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Education</h3>
+        <div className="flex flex-col space-y-2">
+        <div>
+          <div>
+             <h4 className="font-normal dark:text-zinc-100">Western Governors University</h4>
+            <p className="text-zinc-500 dark:text-zinc-400 font-light">Msc in Computer Science - Aritifical Intelligence & ML specialization</p>
+          </div>
+            <div>
+             <h4 className="font-normal dark:text-zinc-100 mt-4">Western Governors University</h4>
+            <p className="text-zinc-500 dark:text-zinc-400 font-light">Bsc in Computer Science</p>
+          </div>
+          <div>
+             <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
+            <ol className="text-zinc-500 dark:text-zinc-400 font-light">
+              <li className='my-1'>Data structures & algorithms</li>
+              <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Differential Equations</li>
+              <li className='my-1'>Programming in C++, Java, and Python</li>
+              <li className='my-1'>ML Theory & Optimization</li>
+              <li className='my-1'>Information Theory</li>
+              <li className='my-1'>Control Theory</li>
+              </ol>
+          </div>
+            <div>
+             <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
+            <ol className="text-zinc-500 dark:text-zinc-400 font-light">
+              <li className='my-1'>GPU & CUDA Programming using C++, CuBLAS, CUTLASS, and CuTile</li>
+              <li className='my-1'>ML Frameworks: PyTorch, TensorFlow, JAX</li>
+              <li className='my-1'>Programming Languages: Python, C++, Java, JavaScrip, SQL</li>
+              <li className='my-1'>Deep Learning models, techniques, mechanistic interp. as well as alignment & safety</li>
+            </ol>
+          </div>
+        </div>
+        </div>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -208,13 +247,13 @@ export default function Personal() {
             </a>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <h3 className="mb-3 text-lg font-medium">Research</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
