@@ -190,8 +190,8 @@ export default function Personal() {
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
             <ol className="text-zinc-500 dark:text-zinc-400 font-light">
-              <li className='my-1'>Data structures & algorithms</li>
-              <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Differential Equations</li>
+              <li className='my-1'>Data structures & algorithms and Complexity Analyis</li>
+              <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
               <li className='my-1'>Programming in C++, Java, and Python</li>
               <li className='my-1'>ML Theory & Optimization</li>
               <li className='my-1'>Information Theory</li>

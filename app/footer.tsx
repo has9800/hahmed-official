@@ -72,8 +72,8 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a href="https://github.com/ibelick/nim" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>Hasan Ahmed</span>
-            <span>2026</span>
+            <span className='italic'>"If a machine is expected to be infallible, it cannot also be intelligent."</span>
+            <span>Hasan Ahmed - {new Date().getFullYear()}</span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">
