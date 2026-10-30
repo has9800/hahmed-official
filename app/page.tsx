@@ -138,7 +138,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400 font-light">
-            Focused on artifical intelligence in all its forms, I'm passionate about exploring the intersection of the human and artificial cognition. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
+            Focused on artifical intelligence in all its forms, I'm passionate about exploring the intersection of human and artificial cognition. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
           </p>
         </div>
       </motion.section>
@@ -180,8 +180,8 @@ export default function Personal() {
         <div className="flex flex-col space-y-2">
         <div>
           <div>
-             <h4 className="font-normal dark:text-zinc-100">Western Governors University</h4>
-            <p className="text-zinc-500 dark:text-zinc-400 font-light">Msc in Computer Science - Aritifical Intelligence & ML specialization</p>
+             <h4 className="font-normal dark:text-zinc-100">University of Texas, Austin</h4>
+            <p className="text-zinc-500 dark:text-zinc-400 font-light">Msc in Computer Science</p>
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Western Governors University</h4>
@@ -190,21 +190,18 @@ export default function Personal() {
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
             <ol className="text-zinc-500 dark:text-zinc-400 font-light">
-              <li className='my-1'>Data structures & algorithms and Complexity Analyis</li>
+              <li className='my-1'>Data structures & algorithms, Computer Architecture, Operating Systems</li>
               <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
-              <li className='my-1'>Programming in C++, Java, and Python</li>
               <li className='my-1'>ML Theory & Optimization</li>
               <li className='my-1'>Information Theory</li>
-              <li className='my-1'>Control Theory</li>
               </ol>
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
             <ol className="text-zinc-500 dark:text-zinc-400 font-light">
-              <li className='my-1'>GPU & CUDA Programming using C++, CuBLAS, CUTLASS, and CuTile</li>
+              <li className='my-1'>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, Parallel Programming, Memory Management</li>
               <li className='my-1'>ML Frameworks: PyTorch, TensorFlow, JAX</li>
               <li className='my-1'>Programming Languages: Python, C++, Java, JavaScrip, SQL</li>
-              <li className='my-1'>Deep Learning models, techniques, mechanistic interp. as well as alignment & safety</li>
             </ol>
           </div>
         </div>
@@ -253,7 +250,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Research</h3>
+        <h3 className="mb-3 text-lg font-medium">Projects</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
