@@ -138,7 +138,10 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-200 font-light">
-            Focused on artifical intelligence in all its forms, I'm passionate about exploring the intersection of human and artificial cognition. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
+            Focused on artifical intelligence in all its forms, I'm passionate about exploring the math and science behind artificial reasoning. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
+          </p>
+          <p className="text-zinc-600 dark:text-zinc-200 font-light">
+            My focus is on inference engineering and GPU kernel development with CUDA and Triton, particularly KV caching, prefill/decode bottlenecks, and memory management. I enjoy approaching problems from first principles, understanding the underlying mathematics, data structures, algorithms, and computer architecture behind the systems I work with. Having that foundation helps me reason about things like matrix tiling, memory access patterns, and performance optimization rather than just relying on existing tools and abstractions.
           </p>
         </div>
       </motion.section>
