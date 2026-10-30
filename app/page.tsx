@@ -137,7 +137,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400 font-light">
+          <p className="text-zinc-600 dark:text-zinc-200 font-light">
             Focused on artifical intelligence in all its forms, I'm passionate about exploring the intersection of human and artificial cognition. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function Personal() {
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                 </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                <p className="text-base text-zinc-600 dark:text-zinc-200">
                   {project.description}
                 </p>
               </div>
@@ -181,15 +181,15 @@ export default function Personal() {
         <div>
           <div>
              <h4 className="font-normal dark:text-zinc-100">University of Texas, Austin</h4>
-            <p className="text-zinc-500 dark:text-zinc-400 font-light">Msc in Computer Science</p>
+            <p className="text-zinc-500 dark:text-zinc-200 font-light">Master of Science in Computer Science</p>
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Western Governors University</h4>
-            <p className="text-zinc-500 dark:text-zinc-400 font-light">Bsc in Computer Science</p>
+            <p className="text-zinc-500 dark:text-zinc-200 font-light">Bachelor of Science in Computer Science</p>
           </div>
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
-            <ol className="text-zinc-500 dark:text-zinc-400 font-light">
+            <ol className="text-zinc-500 dark:text-zinc-200 font-light">
               <li className='my-1'>Data structures & algorithms, Computer Architecture, Operating Systems</li>
               <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
               <li className='my-1'>ML Theory & Optimization</li>
@@ -198,7 +198,7 @@ export default function Personal() {
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
-            <ol className="text-zinc-500 dark:text-zinc-400 font-light">
+            <ol className="text-zinc-500 dark:text-zinc-200 font-light">
               <li className='my-1'>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, Parallel Programming, Memory Management</li>
               <li className='my-1'>ML Frameworks: PyTorch, TensorFlow, JAX</li>
               <li className='my-1'>Programming Languages: Python, C++, Java, JavaScrip, SQL</li>
@@ -232,11 +232,11 @@ export default function Personal() {
                     <h4 className="font-normal dark:text-zinc-100">
                       {job.title}
                     </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
+                    <p className="text-zinc-500 dark:text-zinc-200">
                       {job.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-600 dark:text-zinc-200">
                     {job.start} - {job.end}
                   </p>
                 </div>
@@ -272,7 +272,7 @@ export default function Personal() {
                   <h4 className="font-normal dark:text-zinc-100">
                     {post.title}
                   </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
+                  <p className="text-zinc-500 dark:text-zinc-200">
                     {post.description}
                   </p>
                 </div>
@@ -287,7 +287,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+        <p className="mb-5 text-zinc-600 dark:text-zinc-200">
           Feel free to contact me at{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
