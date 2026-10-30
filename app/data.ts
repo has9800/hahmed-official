@@ -76,8 +76,26 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: "Beyond Next-Token Prediction",
-    description: "Why I believe uncertainty-aware probabilistic reasoning systems may become important as AI matures beyond autoregressive next-token prediction.",
+    title: "Agent Generated Triton Kernel Verification Framework using Z3 Solvers",
+    description: "Validated kernel behavior against defined specifications and produced counterexamples for detected violations for AI generated kernels.",
+    link: '/blog/beyond-next-token-prediction',
+    uid: 'blog-1',
+  },
+  {
+    title: "Vector database compression with Product Quantization",
+    description: "Implemented product quantization (PQ) and a benchmark for memory efficiency, retrieval latency, and recall@k",
+    link: '/blog/beyond-next-token-prediction',
+    uid: 'blog-1',
+  },
+  {
+    title: "Neural networks and attention as graphs",
+    description: "Modeled neural networks and attention weights as graphs to investigate connectivity, centrality, information flow, and causal effects through interventions.",
+    link: '/blog/beyond-next-token-prediction',
+    uid: 'blog-1',
+  },
+  {
+    title: "Mooncake paper (KV Cache & Prefill/Decoding)",
+    description: "Replicated KV-cache management and disaggregated prefill/decode, benchmarked performance, profiled system bottlenecks, and compared results against the paper.",
     link: '/blog/beyond-next-token-prediction',
     uid: 'blog-1',
   },
