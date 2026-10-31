@@ -137,7 +137,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-200 font-light">
+          <p className="text-zinc-600 dark:text-zinc-200 font-light mb-4">
             Focused on artifical intelligence in all its forms, I'm passionate about exploring the math and science behind artificial reasoning. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
           </p>
           <p className="text-zinc-600 dark:text-zinc-200 font-light">
@@ -183,12 +183,12 @@ export default function Personal() {
         <div className="flex flex-col space-y-2">
         <div>
           <div>
-             <h4 className="font-normal dark:text-zinc-100">University of Texas, Austin</h4>
-            <p className="text-zinc-500 dark:text-zinc-200 font-light">Master of Science in Computer Science</p>
+             <h4 className="font-normal dark:text-zinc-100">Master of Science in Computer Science</h4>
+            <p className="text-zinc-500 dark:text-zinc-200 font-light">University of Texas at Austin</p>
           </div>
             <div>
-             <h4 className="font-normal dark:text-zinc-100 mt-4">Western Governors University</h4>
-            <p className="text-zinc-500 dark:text-zinc-200 font-light">Bachelor of Science in Computer Science</p>
+             <h4 className="font-normal dark:text-zinc-100 mt-4">Bachelor of Science in Computer Science</h4>
+            <p className="text-zinc-500 dark:text-zinc-200 font-light">Western Governors University</p>
           </div>
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
