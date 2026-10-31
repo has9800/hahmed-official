@@ -138,10 +138,10 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-200 font-normal dark:font-normal dark:font-light mb-4">
+          <p className="text-zinc-600 dark:text-zinc-200 font-normal  dark:font-light mb-4">
             Focused on artifical intelligence in all its forms, I'm passionate about exploring the math and science behind artificial reasoning. With a background in machine learning, mathematics, and computer science, I strive to study and build systems that not only perform tasks but also understand and adapt to the complexities of the world around them.
           </p>
-          <p className="text-zinc-600 dark:text-zinc-200 font-normal dark:font-normal dark:font-light">
+          <p className="text-zinc-600 dark:text-zinc-200 font-normal  dark:font-light">
             My focus is on inference engineering and GPU kernel development with CUDA and Triton, particularly KV caching, prefill/decode bottlenecks, and memory management. I enjoy approaching problems from first principles, understanding the underlying mathematics, data structures, algorithms, and computer architecture behind the systems I work with. Having that foundation helps me reason about things like matrix tiling, memory access patterns, and performance optimization rather than just relying on existing tools and abstractions.
           </p>
         </div>
@@ -185,15 +185,15 @@ export default function Personal() {
         <div>
           <div>
              <h4 className="font-normal dark:text-zinc-100">Master of Science in Computer Science</h4>
-            <p className="text-zinc-500 dark:text-zinc-200 font-normal dark:font-normal dark:font-light">University of Texas at Austin</p>
+            <p className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">University of Texas at Austin</p>
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Bachelor of Science in Computer Science</h4>
-            <p className="text-zinc-500 dark:text-zinc-200 font-normal dark:font-normal dark:font-light">Western Governors University</p>
+            <p className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">Western Governors University</p>
           </div>
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
-            <ol className="text-zinc-500 dark:text-zinc-200 font-normal dark:font-normal dark:font-light">
+            <ol className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">
               <li className='my-1'>Data structures & algorithms, Computer Architecture, Operating Systems</li>
               <li className='my-1'>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
               <li className='my-1'>ML Theory & Optimization</li>
@@ -202,7 +202,7 @@ export default function Personal() {
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
-            <ol className="text-zinc-500 dark:text-zinc-200 font-normal dark:font-normal dark:font-light">
+            <ol className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">
               <li className='my-1'>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, Parallel Programming, Memory Management</li>
               <li className='my-1'>ML Frameworks: PyTorch, TensorFlow, JAX</li>
               <li className='my-1'>Programming Languages: Python, C++, Java, JavaScrip, SQL</li>
