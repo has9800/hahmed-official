@@ -76,7 +76,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: "Agent Generated Triton Kernel Verification Framework using Z3 Solvers",
+    title: "Agent Generated Triton Kernel Verification Framework using Z3",
     description: "Validated kernel behavior against defined specifications and produced counterexamples for detected violations for AI generated kernels.",
     link: '/blog/beyond-next-token-prediction',
     uid: 'blog-1',
