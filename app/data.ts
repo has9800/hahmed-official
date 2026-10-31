@@ -101,6 +101,15 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ]
 
+export const OPEN_SOURCE: OpenSource[] = [
+  {
+    title: "TransformerLens",
+    description: "Open-source contributor to TransformerLens. Added model bridge unit tests for Qwen model family ensuring consistency between HuggingFace and TransformerLens implementations. Also fixed SVD interpreter test infrastructure by improving model fixtures and removing skipped test paths resulting in 7 passing tests.",
+    link: 'https://github.com/TransformerLensOrg/TransformerLens',
+    uid: 'blog-1',
+  },
+]
+
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
