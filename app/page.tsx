@@ -18,6 +18,7 @@ import {
   BLOG_POSTS,
   EMAIL,
   SOCIAL_LINKS,
+  OPEN_SOURCE
 } from './data'
 import { div } from 'motion/react-m'
 
