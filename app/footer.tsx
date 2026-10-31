@@ -71,8 +71,8 @@ export function Footer() {
     <footer className="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800 max-w-[100%]">
       <div className="flex items-center justify-between">
         <a href="https://github.com/ibelick/nim" target="_blank">
-          <TextLoop className="text-xs text-zinc-500">
-            <span className='italic'>"If a machine is expected to be infallible, it cannot also be intelligent."</span>
+          <TextLoop className="text-xs text-zinc-500 max-w-[100%]">
+            <span className='italic max-w-[100%]'>"If a machine is expected to be infallible, it cannot also be intelligent."</span>
             <span>Hasan Ahmed - {new Date().getFullYear()}</span>
           </TextLoop>
         </a>
