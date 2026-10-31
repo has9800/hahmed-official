@@ -22,6 +22,13 @@ type BlogPost = {
   uid: string
 }
 
+type OpenSource = {
+  title: string
+  description: string
+  link: string
+  uid: string
+}
+
 type SocialLink = {
   label: string
   link: string
