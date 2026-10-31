@@ -255,7 +255,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-3 text-lg font-medium">Projects</h3>
-        <div className="flex flex-col space-y-0">
+        <div className="flex flex-col space-y-2">
           <AnimatedBackground
             enableHover
             className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
