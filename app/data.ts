@@ -89,6 +89,12 @@ export const BLOG_POSTS: BlogPost[] = [
     uid: 'blog-1',
   },
   {
+    title: "Learning the Value of Computation Under Uncertainty",
+    description: "Can reinforcement learning help an agent predict the expected value of additional computation, using uncertainty estimates and information gain, to allocate limited reasoning resources more efficiently?",
+    link: '/blog/beyond-next-token-prediction',
+    uid: 'blog-1',
+  },
+  {
     title: "Vector database compression with Product Quantization",
     description: "Implemented product quantization (PQ) and a benchmark for memory efficiency, retrieval latency, and recall@k",
     link: '/blog/beyond-next-token-prediction',
