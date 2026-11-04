@@ -183,10 +183,10 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Education</h3>
         <div className="flex flex-col space-y-2">
         <div>
-          <div>
+          {/* <div>
              <h4 className="font-normal dark:text-zinc-100">Master of Science in Computer Science</h4>
             <p className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">University of Texas at Austin</p>
-          </div>
+          </div> */}
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Bachelor of Science in Computer Science</h4>
             <p className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">Western Governors University</p>
@@ -203,7 +203,7 @@ export default function Personal() {
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
             <ol className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">
-              <li className='my-1'>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, Parallel Programming, Memory Management</li>
+              <li className='my-1'>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, TorchDynamo, FX graphs, AOTAutograd, TorchInductor, Parallel Programming, Memory Management</li>
               <li className='my-1'>ML Frameworks: PyTorch, TensorFlow, JAX</li>
               <li className='my-1'>Programming Languages: Python, C++, Java, JavaScrip, SQL</li>
             </ol>
