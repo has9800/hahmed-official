@@ -194,17 +194,17 @@ export default function Personal() {
           <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Coursework</h4>
             <ol className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">
-              <li className='my-1'><span className='font-bold'>Core CS: </span>Data structures & algorithms, Computer Architecture, Operating Systems</li>
-              <li className='my-1'><span  className='font-bold'>Math: </span>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
-              <li className='my-1'><span  className='font-bold'>ML: </span>ML Theory & Optimization</li>
+              <li className='my-1'><span className='text-underline'>Core CS: </span>Data structures & algorithms, Computer Architecture, Operating Systems</li>
+              <li className='my-1'><span  className='text-underline'>Math: </span>Discrete Mathematics, Linear Algebra, Calculus, Probability & Statistics, Differential Equations</li>
+              <li className='my-1'><span  className='text-underline'>ML: </span>ML Theory & Optimization</li>
             </ol>
           </div>
             <div>
              <h4 className="font-normal dark:text-zinc-100 mt-4">Relevant Skills</h4>
             <ol className="text-zinc-500 dark:text-zinc-200 font-normal  dark:font-light">
-              <li className='my-1'><span  className='font-bold'>Engineering: </span>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, TorchDynamo, FX graphs, AOTAutograd, TorchInductor, Parallel Programming, Memory Management</li>
-              <li className='my-1'><span  className='font-bold'>ML Frameworks: </span>PyTorch, TensorFlow, JAX</li>
-              <li className='my-1'><span  className='font-bold'>Programming Languages: </span>Python, C++, Java, JavaScript, SQL</li>
+              <li className='my-1'><span  className='text-underline'>Engineering: </span>CUDA, Triton, Inference engineering, Pytorch Distributed Data Parallel (DDP) & Fully Sharded Data Parallel (FSDP), NCCL, TorchDynamo, FX graphs, AOTAutograd, TorchInductor, Parallel Programming, Memory Management</li>
+              <li className='my-1'><span  className='text-underline'>ML Frameworks: </span>PyTorch, TensorFlow, JAX</li>
+              <li className='my-1'><span  className='text-underline'>Programming Languages: </span>Python, C++, Java, JavaScript, SQL</li>
             </ol>
           </div>
         </div>
